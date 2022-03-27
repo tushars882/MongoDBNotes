@@ -1,0 +1,42 @@
+*Mongo db is used to design document easily and seamlessly
+
+*easy to use NoSQL database
+
+------diff b/w mongo and mongod------------
+Mongo is a command line where we give commands to insert data and other instructions where as mongoD is roughly can be called a compiler which just ecxecutes the commands given in mongo
+
+*both the mongo and mongoD runs one after other 
+-------------------------------------------
+*we have added bin directory of mongo from c to the environment variables path so that if anytime we want to use mongo we have to simply write mongo and all the path will automatically be updated
+
+----------------commands related Database---------
+
+*TO VIEW ALL THE CONNTENTS OF DATABASE
+	show dbs
+
+*TO MAKE A NEW DATABASE or switch databases
+	use dbName
+
+
+*If we want to know which db we are working in
+	db
+
+*DELETE DATABASE
+	db.dropDatabase()		//databse is a function here
+
+---------commands related collection--------
+
+*"db.dbName.insertOne({all the collection you need to fill})"
+
+*db.dbname.insertMany([{},{},{}])	    	//to insert many documents in a single run
+
+
+-if we do not provide any id to our collection mongo db automatically adds the id
+
+*to check the collection of our database
+	-db.dbName.find()
+		or
+	-db.dbName.find().pretty()
+
+
+

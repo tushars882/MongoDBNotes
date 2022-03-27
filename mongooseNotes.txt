@@ -1,0 +1,8 @@
+-It is also called as the framework of mongoDB and is used to establish a connection between mongoDb and nodejs
+-It is basically an object modelling tool(OMT)
+
+-If we were supposed to establish a connection between mingoDB and node ,we had to write a good amount of code for the establishment of the connection but with the help of mongoose we can do that with less number of codes
+
+
+
+-------------getDocument func()-------------------------

@@ -1,0 +1,41 @@
+MONGO CRUD OPERATIONS
+---------------------------------
+
+-If we only want document of specific from many documents:-
+	db.dbName.find({entity which you need to find})
+
+-If we only want one specific field:-
+	db.dbName.find({the entity's name},{name:1})	//if you only want the name only and leave everyother thing
+		&
+	db.dbName.find({the entity's name},{name:0}) 	//ifyou want evrything besides the entity you have given 
+
+*1 means you want to see the identity and 0 means you dont wanna see it
+
+
+-Of all the matching documents if we only want to see some specific document we can limit using limit(),it basically matches the document and returns those number of documents matched you've limited it for
+	db.dbName.find({active:true}).limit()
+
+
+-To skip the first appearance of the document and move obtain some specific use skip()
+	db.dbName.find({active:true}).skip(numb of documents you wanna skip)
+
+-----------Updating values------------
+
+
+-To update previously existing values in the document
+	db.dbname.updateOne({key:"value"},{$set:{key:"new value"})
+		&
+	db.dbname.updateMany({},{{}})		//for updating many at a single time
+
+*$set operator replaces and set the value
+
+------------Deleteing values----------------------------
+-To delete a whole segment of document 
+	db.dbname.deleteMany({key:value})	//use deletOne for deleting document that appears first
+
+----------to sort according to any key(having integer value)----------
+	db.dbname.find().sort({key:value}).pretty() 
+
+
+
+

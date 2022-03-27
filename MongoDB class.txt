@@ -1,0 +1,18 @@
+db.createCollection(Movie)
+
+
+-------to insert values-----------
+*db.Movie.insert({Mid:6, Mname:"x", Mrole:"hero", Mticket:110})
+
+
+--------use of $in----------------
+
+*db.Movie.find(Mname{$in:["x","y","z"]})	//here we have returned the rows which have Mname equal to the array passed
+
+
+---------use of $nin-----------------
+
+*db.Movie.find(Mname{$nin:["x","y","z"]})	//here it returns the Mname whose values doesnt match with the array passed
+
+
+
